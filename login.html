@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+      <div>
+        <label for="">Tên </label>
+        <input type="text" name="username" id="username">
+      </div>   
+
+      <div>
+        <label for="">Mật khẩu</label>
+        <input type="password" name="password" id="password">
+      </div> 
+
+      <div>
+        <button type="button" onclick="Login()">Submit</button>
+      </div>
+   </form>
+   <script>
+      
+      function Login(){
+        let username=document.getElementById('username').value;
+        let password=document.getElementById('password').value;
+        if(username=="admin"&& password=="123"){
+           
+            window.location.href='chess.html';
+            
+        }
+        else{
+            alert('SAI');
+        }
+      }
+
+   </script>
+</body>
+</html>
